@@ -22,7 +22,7 @@ jobs:
         run: |
           rm -rf physiq-hub/wiki
           mkdir -p physiq-hub/wiki
-          cp index.html physiq-hub/wiki/
+          cp index.html app.js physiq-hub/wiki/
 
       - name: Commit and push
         working-directory: physiq-hub
