@@ -320,7 +320,7 @@
 </div>
 
 <script>
-// ─── DATA ───────────────────────────────────────────────────────────────────
+// ─── DATA ────────────────────────────────────────────────────────────────────────────
 const REGIONS = [
   {
     id: 'cervical',
@@ -346,7 +346,7 @@ const REGIONS = [
         ]
       },
       {
-        name: 'Mielopatía',
+        name: 'Mielопатía',
         tests: [
           { id: 'cx-009', name: 'Romberg test', ev: 'green', link: '' },
         ]
@@ -1047,11 +1047,11 @@ const REGIONS = [
   },
 ];
 
-// ─── STATE ──────────────────────────────────────────────────────────────────
+// ─── STATE ────────────────────────────────────────────────────────────────────────────
 let currentRegion = null;
 let currentFilter = 'all';
 
-// ─── RENDER HOME ────────────────────────────────────────────────────────────
+// ─── RENDER HOME ──────────────────────────────────────────────────────────────────────────
 function renderHome() {
   const grid = document.getElementById('regions-grid');
   grid.innerHTML = REGIONS.map(region => {
@@ -1068,7 +1068,7 @@ function renderHome() {
   }).join('');
 }
 
-// ─── NAVIGATION ─────────────────────────────────────────────────────────────
+// ─── NAVIGATION ──────────────────────────────────────────────────────────────────────────
 function showRegion(regionId) {
   currentRegion = REGIONS.find(r => r.id === regionId);
   currentFilter = 'all';
@@ -1096,7 +1096,7 @@ function showHome() {
   window.scrollTo(0, 0);
 }
 
-// ─── RENDER REGION ──────────────────────────────────────────────────────────
+// ─── RENDER REGION ─────────────────────────────────────────────────────────────────────────
 function renderRegion() {
   const content = document.getElementById('region-content');
   content.innerHTML = currentRegion.categories.map(cat => {
@@ -1129,7 +1129,7 @@ function renderRegion() {
   }).join('');
 }
 
-// ─── FILTER ─────────────────────────────────────────────────────────────────
+// ─── FILTER ───────────────────────────────────────────────────────────────────────────
 function setFilter(filter, btn) {
   currentFilter = filter;
   document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
@@ -1144,7 +1144,7 @@ function setFilter(filter, btn) {
   });
 }
 
-// ─── HUB INTEGRATION ────────────────────────────────────────────────────────
+// ─── HUB INTEGRATION ────────────────────────────────────────────────────────────────────────
 try {
   if (window.self !== window.top) {
     document.body.classList.add('in-hub');
@@ -1156,7 +1156,7 @@ try {
   document.body.classList.add('in-hub');
 }
 
-// ─── INIT ───────────────────────────────────────────────────────────────────
+// ─── INIT ────────────────────────────────────────────────────────────────────────────────
 renderHome();
 </script>
 </body>
