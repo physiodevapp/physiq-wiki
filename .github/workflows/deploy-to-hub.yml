@@ -22,8 +22,9 @@ jobs:
         run: |
           rm -rf physiq-hub/wiki
           mkdir -p physiq-hub/wiki
-          cp index.html app.js physiq-hub/wiki/
+          cp index.html app.js data.js physiq-hub/wiki/
           sed -i 's|src="app.js"|src="app.js?v=${{ github.sha }}"|' physiq-hub/wiki/index.html
+          sed -i 's|src="data.js"|src="data.js?v=${{ github.sha }}"|' physiq-hub/wiki/index.html
 
       - name: Commit and push
         working-directory: physiq-hub
