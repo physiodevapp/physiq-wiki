@@ -15,13 +15,13 @@
       --border:     #232d45;
       --border2:    #2d3a58;
       --text:       #e8edf2;
-      --text2:      #8aa4bc;
-      --text3:      #5a6e8a;
-      --accent:     #f59e0b;
-      --accent-lo:  rgba(245,158,11,0.12);
-      --accent-mid: rgba(245,158,11,0.55);
-      --accent-bar: rgba(245,158,11,0.85);
-      --accent-empty: rgba(245,158,11,0.07);
+      --text2:      #8892a4;
+      --text3:      #5a6478;
+      --accent:     #6366f1;
+      --accent-lo:  rgba(99,102,241,0.12);
+      --accent-mid: rgba(99,102,241,0.55);
+      --accent-bar: rgba(99,102,241,0.85);
+      --accent-empty: rgba(99,102,241,0.07);
     }
 
     html, body {
@@ -123,15 +123,15 @@
     .pulse-bar[data-intensity="3"] .bar-fill { height: 100%; }
 
     /* Beat-state classes applied to the bar, affect the fill */
-    .pulse-bar.played  .bar-fill { background: rgba(245,158,11,0.15); }
+    .pulse-bar.played  .bar-fill { background: rgba(99,102,241,0.15); }
     .pulse-bar.current .bar-fill { background: var(--accent-bar); }
     .pulse-bar.flash   .bar-fill {
       background: #fff;
-      box-shadow: 0 0 16px rgba(245,158,11,0.75);
+      box-shadow: 0 0 16px rgba(99,102,241,0.75);
     }
     /* For intensity-0 bars: flash the container itself (very subtly) */
     .pulse-bar[data-intensity="0"].flash {
-      background: rgba(245,158,11,0.18);
+      background: rgba(99,102,241,0.18);
       transition: background 0.06s ease;
     }
     .pulse-bar[data-intensity="0"] { transition: background 0.25s ease; }
@@ -158,7 +158,7 @@
       flex-shrink: 0;
     }
     .sound-btn:hover { border-color: var(--accent); color: var(--accent); }
-    .sound-btn.on    { border-color: rgba(245,158,11,0.45); color: var(--accent); background: var(--accent-lo); }
+    .sound-btn.on    { border-color: rgba(99,102,241,0.45); color: var(--accent); background: var(--accent-lo); }
 
     /* ── BPM section ────────────────────────────────────── */
     .bpm-section {
@@ -255,7 +255,7 @@
       color: #fff; cursor: pointer;
       display: flex; align-items: center; justify-content: center;
       transition: opacity 0.15s, transform 0.08s, background 0.2s;
-      box-shadow: 0 4px 20px rgba(245,158,11,0.32);
+      box-shadow: 0 4px 20px rgba(99,102,241,0.32);
       -webkit-tap-highlight-color: transparent;
     }
     .play-btn:hover  { opacity: 0.88; }
@@ -318,7 +318,7 @@
       font-family: 'Outfit', sans-serif;
       transition: border-color 0.15s, color 0.15s;
     }
-    .sound-opt.active { border-color: rgba(245,158,11,0.4); color: var(--accent); }
+    .sound-opt.active { border-color: rgba(99,102,241,0.4); color: var(--accent); }
     .sound-opt-dot {
       width: 8px; height: 8px; border-radius: 50%;
       border: 2px solid currentColor; flex-shrink: 0;
