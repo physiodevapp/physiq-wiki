@@ -765,12 +765,8 @@ function _overlayClick(e) {
 // ── Navigation ────────────────────────────────────────────────
 function goHome() {
   if (isPlaying) stopMetronome();
-  window.parent.postMessage({ type: 'PHYSIQ_GO_HOME' }, '*');
+  history.back();
 }
-
-window.addEventListener('message', e => {
-  if (e.data?.type === 'PHYSIQ_SAT_VISIBLE') { /* no-op */ }
-});
 
 // ── Pulse count change ────────────────────────────────────────
 document.getElementById('pulses-slider').addEventListener('input', e => {
