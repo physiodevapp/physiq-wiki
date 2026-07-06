@@ -56,11 +56,19 @@
     align-items: center;
     gap: 12px;
   }
+  @media (min-width: 641px) {
+    .app-header {
+      width: 100vw;
+      margin-left: calc((640px - 100vw) / 2);
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
 
   .logo-wrap { flex: 1; }
   .logo-main {
     font-family: 'DM Serif Display', serif;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     letter-spacing: -0.5px;
     color: var(--text);
     line-height: 1.1;
