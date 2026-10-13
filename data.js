@@ -896,7 +896,15 @@ const TISSUE_TIMES = {
       { mide: 'deporte', nombre: 'Prótesis total de rodilla', corto: 'Prótesis rodilla', desde: 5, hasta: 6, g: 'moderada',
         nota: 'Fisioterapia desde las primeras 24 horas y fuerza de alta intensidad desde la 1.ª semana (guía APTA). Vuelve al deporte el 19 % a los 3 meses, el 70 % a los 6 y el 84 % al año, casi siempre a deportes de bajo impacto. Manda el protocolo del cirujano. (Magan 2021 · Jette 2020)' },
       { mide: 'deporte', nombre: 'Prótesis total de cadera', corto: 'Prótesis cadera', desde: 4, hasta: 5, g: 'moderada',
-        nota: 'La mayoría vuelve a su deporte en los primeros 6 meses y la mitad en los 3 primeros, sobre todo a deportes de bajo impacto. Los cirujanos lo permiten a las 6–12 semanas o a los 3 meses, y no hay pruebas de que más actividad acorte la vida de la prótesis. Manda el protocolo del cirujano. (Telang 2024)' },
+        nota: 'La mayoría vuelve a su deporte en los primeros 6 meses y la mitad en los 3 primeros, sobre todo a deportes de bajo impacto. Los cirujanos lo permiten a las 6–12 semanas o a los 3 meses, y no hay pruebas de que más actividad acorte la vida de la prótesis. Vuelta al trabajo, con pocos datos (vía anterior): 30–60 % a los 3 meses y 87 % al año. Manda el protocolo del cirujano. (Telang 2024 · Pan 2024)' },
+    ] },
+    { tejido: 'Columna', filas: [
+      { mide: 'evolucion', nombre: 'Lumbalgia aguda inespecífica', corto: 'Lumbalgia', desde: 0, hasta: 4, g: 'leve',
+        nota: 'La mitad se resuelve en 1–2 semanas y el 90 % en 6–12. Pasa a crónica a partir de las 12 semanas; más probable con episodios previos, dolor intenso, depresión, miedo al movimiento o síntomas en la pierna. (Alexander 2024 · Margetis y Singh 2025)' },
+      { mide: 'evolucion', nombre: 'Radiculopatía lumbar (ciática)', corto: 'Radic. lumbar', desde: 2, hasta: 6, g: 'moderada',
+        nota: 'La mayoría se resuelve en 4–6 semanas, más despacio con déficit neurológico. En atención primaria, solo el 55 % ha mejorado su discapacidad al año. Tras discectomía, el 73 % no tiene dolor de pierna al año. (Davis 2024 · Konstantinou 2018 · Alexander 2024)' },
+      { mide: 'evolucion', nombre: 'Radiculopatía cervical', corto: 'Radic. cervical', desde: 3, hasta: 7, g: 'moderada',
+        nota: 'Más del 85 % de las agudas se resuelve en 8–12 semanas. La mejoría importante llega en los primeros 4–6 meses y la recuperación completa, a los 2–3 años en el 83 %; puede recidivar con menos intensidad. (Margetis y Magnus 2025 · Wong 2014)' },
     ] },
     { tejido: 'Hueso', filas: [
       { mide: 'sinEspecificar', nombre: 'Fractura', corto: 'Fractura', desde: 2, hasta: 5, g: 'moderada',
