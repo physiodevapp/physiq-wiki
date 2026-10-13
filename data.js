@@ -893,6 +893,10 @@ const TISSUE_TIMES = {
         nota: 'Cabestrillo de 1 a 6 semanas, sin pruebas de qué plazo o posición es mejor; lo mismo tras la estabilización quirúrgica. Recidiva muy alta en jóvenes (hasta el 92 % en menores de 25 con deporte de contacto). Tras una primera luxación, vuelve a su nivel el 79 % con reparación artroscópica y el 49 % sin cirugía; en plena temporada, la mayoría vuelve en unos 10 días, con más recidivas. (Pak y Kim 2023; Abdel Khalik 2025)' },
       { mide: 'evolucion', nombre: 'Capsulitis adhesiva (hombro congelado)', corto: 'Capsulitis', desde: 4, hasta: 7, g: 'moderada',
         nota: 'De unos meses a 2–3 años: fase dolorosa (2–9 meses), rígida (4–12 meses) y de descongelación. Cerca del 80 % recupera una función normal o casi normal; un 10–20 % queda con rigidez o dolor. Más larga con diabetes o tiroidopatía. (Li 2025)' },
+      { mide: 'deporte', nombre: 'Prótesis total de rodilla', corto: 'Prótesis rodilla', desde: 5, hasta: 6, g: 'moderada',
+        nota: 'Fisioterapia desde las primeras 24 horas y fuerza de alta intensidad desde la 1.ª semana (guía APTA). Vuelve al deporte el 19 % a los 3 meses, el 70 % a los 6 y el 84 % al año, casi siempre a deportes de bajo impacto. Manda el protocolo del cirujano. (Magan 2021 · Jette 2020)' },
+      { mide: 'deporte', nombre: 'Prótesis total de cadera', corto: 'Prótesis cadera', desde: 4, hasta: 5, g: 'moderada',
+        nota: 'La mayoría vuelve a su deporte en los primeros 6 meses y la mitad en los 3 primeros, sobre todo a deportes de bajo impacto. Los cirujanos lo permiten a las 6–12 semanas o a los 3 meses, y no hay pruebas de que más actividad acorte la vida de la prótesis. Manda el protocolo del cirujano. (Telang 2024)' },
     ] },
     { tejido: 'Hueso', filas: [
       { mide: 'sinEspecificar', nombre: 'Fractura', corto: 'Fractura', desde: 2, hasta: 5, g: 'moderada',
